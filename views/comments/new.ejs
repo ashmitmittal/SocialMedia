@@ -1,0 +1,52 @@
+<% include ../partials/header %>
+
+<!-- <div class="container">
+    <div class="row">
+        <h1>Upload a new Post </h1>
+        <form class="form-group" action="/posts" method="POST">
+            <input class="form-control" type="text" name="name" placeholder="name">
+            <input class="form-control" type="text" name="image" placeholder="image url">
+            <button class="btn btn-outline-primary">Upload</button>
+        </form>
+        <a href="/posts">Go back</a>
+    </div>
+</div> -->
+<style>
+        .form-container{
+          background: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 6px 6px 10px 0px #6A33D3;
+        } 
+          .res{
+          width: 30%;
+          margin: 25px auto;
+        } 
+         @media only screen and (max-width: 768px) {
+          .res{
+            width: 100%;
+          }
+        } 
+</style>
+
+<div class="container-fluid">
+    <div style="margin-top: 40px;">
+        <h1 style="text-align: center; color: #6A33D3; margin: 0; padding: 0;">Add a new comment <%=post.name%></h1>
+        <div class="form-container res">
+            <form action="/posts/<%=post._id%>/comments" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="text" name="comment[text]">
+                </div>
+                <!-- <div class="form-group">
+                    <input class="form-control" type="text" placeholder="author" name="comment[author]">
+                </div> -->
+                <div class="form-group">
+                    <button class="btn btn-primary btn-lg">Upload</button>
+                </div>
+            </form>
+            <a href="/posts">Go back</a>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

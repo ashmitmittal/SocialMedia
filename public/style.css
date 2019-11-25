@@ -1,0 +1,64 @@
+.well{
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#f7f4ff;
+    border:1px solid #e3e3e3;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.05)
+}
+.img-thumbnail img{
+    width: 100%;
+    height: 80%;
+    margin: 5px auto;
+}
+
+.img-thumbnail{
+    padding: 0;
+    margin: 10px;
+}
+.img-thumbnail .caption{
+    padding: 9px;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    background-color:#f7f4ff;
+}
+.jumbotron h1{
+    color: #bfa8ff;
+}
+.jumbotron p{
+    color: #d2c1ff;
+}
+.btn-outline-primary{
+    background: #c1ffd2;
+}
+.btn-outline-primary:hover{
+    background: #fff4fc;
+    color: #a8ffbf;
+    border-color: #a8ffbf;
+}
+
+#profile_pic{
+    height: 200px;
+    width: 200px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+    position:relative;
+    top:-70px;
+    z-index: 1;
+    border: 5px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile_name{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
