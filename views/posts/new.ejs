@@ -16,10 +16,10 @@
           background: #fff;
           padding: 30px;
           border-radius: 10px;
-          box-shadow: 6px 6px 10px 0px #6A33D3;
+          box-shadow: 6px 6px 10px 0px rgb(0,123,255);
         } 
           .res{
-          width: 30%;
+          width: 40%;
           margin: 25px auto;
         } 
          @media only screen and (max-width: 768px) {
@@ -31,7 +31,7 @@
 
 <div class="container-fluid">
         <div style="margin-top: 40px;">
-            <h1 style="text-align: center; color: #6A33D3; margin: 0; padding: 0;">Upload a new Post</h1>
+            <h1 style="text-align: center; color: #007bff; margin: 0; padding: 0;">Upload a new Post</h1>
             <div class="form-container res">
                 <form action="/posts" method="POST">
                     <div class="form-group">
@@ -41,7 +41,7 @@
                         <input class="form-control" type="text" placeholder="image url" name="image">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Description" name="description">
+                        <input class="form-control" type="text" placeholder="Caption" name="description">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary btn-lg">Upload</button>

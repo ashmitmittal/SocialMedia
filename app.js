@@ -18,7 +18,7 @@ var commentRoutes = require("./routes/comments"),
     authRoutes    = require("./routes/index");
 
 // mongoose.connect('mongodb://localhost/social', {useUnifiedTopology: true, useNewUrlParser: true});
- mongoose.connect("mongodb+srv://ashi:tomjarry@social-arex2.mongodb.net/test?retryWrites=true&w=majority");
+ mongoose.connect("mongodb+srv://ashi:tomjarry@social-arex2.mongodb.net/test?retryWrites=true&w=majority", {useUnifiedTopology: true, useNewUrlParser: true});
 // mongodb+srv://ashi:tomjarry@social-arex2.mongodb.net/test?retryWrites=true&w=majority
 
 mongoose.set('useFindAndModify', false);
